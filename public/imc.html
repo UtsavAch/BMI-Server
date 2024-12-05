@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMC</title>
+  </head>
+  <body>
+    <p>IMC</p>
+    <button onclick="window.location.href='index.html'">Home</button>
+    <div
+      style="
+        border: 1px solid black;
+        width: fit-content;
+        padding: 20px;
+        margin-top: 20px;
+      "
+    >
+      <form id="imc-form">
+        <label for="weight">Weight (kg):</label>
+        <input id="weight" type="number" required />
+        <label for="height">Height (m):</label>
+        <input id="height" type="number" required />
+        <button type="submit">Calculate</button>
+      </form>
+      <div><span>Result: </span><span id="result">______</span></div>
+    </div>
+    <script src="../scripts/imc-script.js"></script>
+  </body>
+</html>
